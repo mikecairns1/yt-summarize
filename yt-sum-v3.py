@@ -14,7 +14,7 @@ def format_transcript(transcript):
     return ' '.join([entry['text'] for entry in transcript])
 
 def summarize_with_ollama(text, model="llama3.1"):
-    API_URL = "http://192.168.1.171:11434/api/generate"
+    API_URL = "http://localhost:11434/api/generate"
     
     payload = {
         "model": model,
